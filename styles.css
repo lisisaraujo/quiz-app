@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit; /*makes no additional margins and paddings be addded to the border of the box*/
+}
+
+html {
+  font-size: 100%; /* we defined the root font size, so that all the other font sizes on the page will follow the root font size by inheritance. Therefore we will define the other (children) font sizes in rem. 1 rem = 10px and so on*/
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  box-sizing: border-box;
+  height: 95vh;
+  position: relative;
+  flex-flow: column wrap;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  text-align: center;
+  color: black;
+  font-family: monospace;
+  font-size: 1rem;
+  justify-content: center;
+  border-style: double;
+  height: 100px;
+  align-items: center;
+}
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.card {
+  position: relative;
+  flex-flow: column wrap;
+  display: flex;
+  border-style: double;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 10px 50px;
+}
+.bookmark {
+  position: absolute;
+  margin-top: -15px;
+  margin-right: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.bookmark-btn {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  height: fit-content;
+  width: fit-content;
+  z-index: 1;
+}
+.question {
+  border: 20px;
+  padding: 20px;
+}
+
+button {
+  height: 50px;
+  width: 200px;
+}
+
+.tags {
+  border: 10px;
+  align-self: flex-end;
+}
