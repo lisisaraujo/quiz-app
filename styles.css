@@ -7,11 +7,13 @@
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 20px 0 45px 0;
   font-family: monospace;
   background-color: #ffffff;
+  font-size: 0.7rem;
 }
 
 .header {
@@ -22,7 +24,7 @@ body {
   background-color: #e3f0f9;
   border-width: 5px;
   color: #afd0e9;
-  height: 80px;
+  height: 60px;
   padding: 10px;
   width: 100%;
   top: 0;
@@ -38,7 +40,8 @@ main {
 }
 
 .card {
-  border-color: #8181db;
+  border-width: 6px;
+  border-color: #afd0e9;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -47,10 +50,11 @@ main {
   border-style: double;
   text-align: center;
   justify-content: center;
-  margin: 10px 80px;
+  margin: 15px 80px;
   border-radius: 20px;
   padding: 20px 20px;
   background-color: #e6e6fa;
+  box-shadow: 10px 10px #8181db;
 }
 .bookmark {
   position: absolute;
@@ -77,12 +81,19 @@ main {
 }
 
 .btn-show-answer {
+  font-family: inherit;
+  border-style: double;
+  border-width: 5px;
+  box-shadow: 5px 5px #8181db;
+  border-color: #afd0e9;
+  background-color: #afd0e9;
+  color: #8181db;
   position: relative;
   height: 30px;
   width: 100px;
   align-content: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   border-radius: 10px;
 }
 
@@ -96,18 +107,17 @@ main {
   padding: 3px;
   color: white;
   text-decoration: none;
-  background-color: grey;
+  background-color: #8181db;
   border-radius: 5px;
 }
 
 footer {
   display: flex;
-  align-items: baseline;
+  /* align-items: center; */
   box-sizing: border-box;
   justify-content: space-around;
-  text-align: center;
+  /* text-align: center; */
   position: fixed;
-  border-style: solid;
   background-color: #e3f0f9;
   color: #ffffff;
   height: 80px;
@@ -129,7 +139,6 @@ li {
 
 li a {
   display: block;
-  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -137,17 +146,37 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: black;
+  background-color: #afd0e9;
 }
 
 .active {
-  background-color: rgba(70, 107, 136, 0.5);
+  background-color: #afd0e9;
 }
 
+.profile-info {
+  position: relative;
+  display: flex;
+  flex-flow: nowrap;
+}
+
+.profile-name {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
 .profile-image {
+  padding: 10px;
+  margin-bottom: 10px;
   justify-content: center;
   text-align: center;
   align-content: center;
   display: flex;
   flex-flow: row wrap;
+}
+
+.profile-description {
+  border: dashed;
+  padding: 10px 10px;
+  margin: 10px 10px;
+  text-align: center;
 }
