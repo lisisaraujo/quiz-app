@@ -11,29 +11,27 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  /* font-size: 16px; */
-  line-height: 1.7;
-  box-sizing: border-box;
-  height: 95vh;
-  position: relative;
-  flex-flow: column wrap;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 45px 0;
+  font-family: system-ui;
 }
 
 .header {
-  position: relative;
-  display: flex;
   text-align: center;
-  color: black;
-  font-family: monospace;
-  font-size: 1rem;
-  justify-content: center;
-  border-style: double;
-  height: 100px;
-  align-items: center;
+  position: fixed;
+  background: rgba(175, 184, 193);
+  color: #ffffff;
+  height: 80px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
+
 main {
+  margin: 80px 20px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -41,23 +39,26 @@ main {
 }
 
 .card {
+  box-sizing: border-box;
   position: relative;
-  flex-flow: column wrap;
   display: flex;
+  align-items: center;
+  flex-flow: column wrap;
   border-style: double;
   text-align: center;
-  box-sizing: border-box;
-  margin: 10px 50px;
+  justify-content: center;
+  margin: 10px 80px;
+  border-radius: 20px;
+  padding: 20px 20px;
 }
 .bookmark {
   position: absolute;
-  margin-top: -15px;
-  margin-right: 0;
+  margin-top: 10px;
+  margin-right: 5px;
   top: 0;
   right: 0;
-  z-index: 1;
 }
-.bookmark-btn {
+.btn-bookmark {
   position: absolute;
   border: 0;
   background-color: transparent;
@@ -65,19 +66,77 @@ main {
   right: 0;
   height: fit-content;
   width: fit-content;
-  z-index: 1;
+  /* z-index: 1; */
 }
+
 .question {
+  position: relative;
   border: 20px;
   padding: 20px;
 }
 
-button {
-  height: 50px;
-  width: 200px;
+.btn-show-answer {
+  position: relative;
+  height: 30px;
+  width: 100px;
+  align-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
 .tags {
-  border: 10px;
-  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hashtag {
+  margin: 3px 3px;
+  padding: 3px;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  text-align: center;
+  position: fixed;
+  background: rgb(175, 184, 193);
+  color: #ffffff;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: black;
+}
+
+.active {
+  background-color: aqua;
 }
