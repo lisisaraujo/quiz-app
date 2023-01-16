@@ -6,25 +6,26 @@
   box-sizing: inherit; /*makes no additional margins and paddings be addded to the border of the box*/
 }
 
-html {
-  font-size: 100%; /* we defined the root font size, so that all the other font sizes on the page will follow the root font size by inheritance. Therefore we will define the other (children) font sizes in rem. 1 rem = 10px and so on*/
-}
-
 body {
   display: flex;
   flex-direction: column;
-  margin: 80px 0 45px 0;
-  font-family: system-ui;
+  margin: 20px 0 45px 0;
+  font-family: monospace;
+  background-color: #ffffff;
 }
 
 .header {
-  text-align: center;
+  display: flex;
   position: fixed;
-  background: rgba(175, 184, 193);
-  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  border-color: #afd0e9;
+  background-color: white;
+  border-style: dashed;
+  border-width: 5px;
+  color: #afd0e9;
   height: 80px;
   padding: 10px;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -39,6 +40,7 @@ main {
 }
 
 .card {
+  border-color: #8181db;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -50,6 +52,7 @@ main {
   margin: 10px 80px;
   border-radius: 20px;
   padding: 20px 20px;
+  background-color: #e6e6fa;
 }
 .bookmark {
   position: absolute;
@@ -102,10 +105,14 @@ main {
 footer {
   display: flex;
   align-items: baseline;
+  box-sizing: border-box;
   justify-content: space-around;
   text-align: center;
   position: fixed;
-  background: rgb(175, 184, 193);
+  border-style: solid;
+  border-width: 5px;
+  border-color: #afd0e9;
+  background-color: #E3F0F9
   color: #ffffff;
   height: 80px;
   width: 100%;
@@ -138,5 +145,13 @@ li a:hover {
 }
 
 .active {
-  background-color: aqua;
+  background-color: rgba(70, 107, 136, 0.5);
+}
+
+.profile-image {
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  display: flex;
+  flex-flow: row wrap;
 }
