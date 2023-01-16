@@ -19,9 +19,7 @@ body {
   position: fixed;
   align-items: center;
   justify-content: center;
-  border-color: #afd0e9;
-  background-color: white;
-  border-style: dashed;
+  background-color: #e3f0f9;
   border-width: 5px;
   color: #afd0e9;
   height: 80px;
@@ -110,9 +108,7 @@ footer {
   text-align: center;
   position: fixed;
   border-style: solid;
-  border-width: 5px;
-  border-color: #afd0e9;
-  background-color: #E3F0F9
+  background-color: #e3f0f9;
   color: #ffffff;
   height: 80px;
   width: 100%;
