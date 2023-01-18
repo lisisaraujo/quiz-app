@@ -1,0 +1,71 @@
+.card {
+  border-width: 6px;
+  border-color: #afd0e9;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  border-style: double;
+  text-align: center;
+  justify-content: center;
+  margin: 15px 80px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  background-color: #e6e6fa;
+  box-shadow: 10px 10px #8181db;
+}
+.bookmark {
+  position: absolute;
+  margin-top: 10px;
+  margin-right: 5px;
+  top: 0;
+  right: 0;
+}
+.btn-bookmark {
+  position: absolute;
+  border: 0;
+  background-color: transparent;
+  top: 0;
+  right: 0;
+  height: fit-content;
+  width: fit-content;
+  /* z-index: 1; */
+}
+
+.question {
+  position: relative;
+  border: 20px;
+  padding: 20px;
+}
+
+.btn-show-answer {
+  font-family: inherit;
+  border-style: double;
+  border-width: 5px;
+  box-shadow: 5px 5px #8181db;
+  border-color: #afd0e9;
+  background-color: #afd0e9;
+  color: #8181db;
+  position: relative;
+  height: 30px;
+  width: 100px;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.tags {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hashtag {
+  margin: 3px 3px;
+  padding: 3px;
+  color: white;
+  text-decoration: none;
+  background-color: #8181db;
+  border-radius: 5px;
+}
