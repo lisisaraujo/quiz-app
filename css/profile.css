@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   padding: 40px;
+  justify-content: baseline;
 }
 .profile-image {
   padding: 10px;
@@ -20,14 +21,63 @@
 }
 
 .profile-description {
-  border: dashed;
-  padding: 10px 10px;
-  margin: 10px 10px;
+  font-family: inherit;
+  border-style: double;
+  border-width: 5px;
+  /* box-shadow: 5px 5px #8181db; */
+  border-color: #8181db;
+  background-color: #afd0e9;
+  color: #8181db;
+  border-radius: 15px;
   text-align: center;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
 }
 
-/* .counter {
-    display: flex;
-    align-content: center;
-    text-align: center;
-  } */
+.counter {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.btn {
+  font-family: inherit;
+  border-style: double;
+  border-width: 5px;
+  box-shadow: 5px 5px #8181db;
+  border-color: #afd0e9;
+  background-color: #afd0e9;
+  color: #8181db;
+  position: relative;
+  height: 45px;
+  width: 35px;
+  text-align: end;
+  margin: 10px 10px 20px 10px;
+  border-radius: 10px;
+}
+.settings-title {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin: 10px;
+}
+
+.settings {
+  justify-content: flex-end;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.dark-mode-setting {
+  display: flex;
+  justify-content: flex-end;
+}
+.btn-dark-mode {
+  text-align: center;
+  display: flex;
+  background-color: transparent;
+  height: 45px;
+  width: 35px;
+  border-color: transparent;
+}
