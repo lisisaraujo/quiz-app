@@ -11,14 +11,18 @@
   align-items: center;
   justify-content: center;
   background-color: #e3f0f9;
-  border-width: 5px;
-  color: #afd0e9;
   height: 60px;
   padding: 10px;
   width: 100%;
   top: 0;
   z-index: 1;
 }
+
+.header__title {
+  color: #afd0e9;
+  border-width: 5px;
+}
+
 main {
   margin: 80px 20px;
   position: relative;
@@ -34,8 +38,9 @@ body {
   margin: 20px 0 45px 0;
   font-family: monospace;
   background-color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
+
 footer {
   display: flex;
   /* align-items: center; */
@@ -51,18 +56,18 @@ footer {
   z-index: 1;
 }
 
-nav {
+.nav-bar {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-li {
+.nav-bar__list-item {
   list-style-type: none;
   float: left;
 }
 
-li a {
+.list-item__link {
   display: block;
   text-align: center;
   padding: 14px 16px;
@@ -70,7 +75,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.list-item__link:hover {
   background-color: rgba(175, 208, 233, 0.737);
 }
 

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="profile page"
+      content="profile information, counter links to self-created questions and bookmarked questions and dark-mode settings options. Bookmark on the top right side of each card to save the card to the bookmarked section. Navigation menu at the bottom with home, bookmark page and profile page options."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300&display=swap"
       rel="stylesheet"
@@ -13,68 +16,81 @@
   </head>
   <body>
     <div class="header">
-      <h1 class="title">Quiz App</h1>
+      <h1 class="header__title">Quiz App</h1>
     </div>
     <main>
-      <section class="profile-info">
-        <div class="profile-image">
-          <img src="https://img.icons8.com/ios/50/null/cat-profile.png" />
+      <section class="profile">
+        <div class="profile__image">
+          <img
+            src="https://img.icons8.com/ios/50/null/cat-profile.png"
+            alt="profile image"
+          />
         </div>
-        <div class="profile-name">
-          <h2>Aline Araujo</h2>
+        <div class="profile__info">
+          <div class="profile__name">
+            <h2>Aline Araujo</h2>
+          </div>
+          <div class="profile__description">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+              molestias temporibus vero ex, debitis amet! Itaque nisi vero
+              tenetur quas cumque.
+            </p>
+          </div>
         </div>
       </section>
-      <div class="profile-description">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
-          molestias temporibus vero ex, debitis amet! Itaque nisi vero tenetur
-          quas cumque.
-        </p>
-      </div>
-      <div class="counter">
-        <button class="btn btn-questions">
+      <section class="counter__btns">
+        <button class="counter__btn btn-created-questions">
           <img
+            class="question__image"
             src="https://img.icons8.com/ios/30/null/question-mark--v1.png"
             alt="button to created questions"
           />17
         </button>
-        <button class="btn btn-questions">
+        <button class="counter__btn btn-bookmarks">
           <img
+            class="bookmark__image"
             src="https://img.icons8.com/windows/32/null/filled-bookmark-ribbon.png"
             alt="bookmark"
           />5
         </button>
-      </div>
+      </section>
       <div class="settings">
-        <div class="settings-title"><h2>Settings</h2></div>
-      </div>
-      <div class="dark-mode-setting">
-        <h2>Dark mode</h2>
-        <button class="btn-dark-mode">
-          <img src="https://img.icons8.com/ios/30/null/toggle-off.png" />
-        </button>
+        <div class="settings__title"><h2>Settings</h2></div>
+        <div class="setting__dark-mode">
+          <h2 class="dark-mode__title">Dark mode</h2>
+          <button class="dark-mode__btn">
+            <img
+              src="https://img.icons8.com/ios/30/null/toggle-off.png"
+              alt="dark mode button"
+            />
+          </button>
+        </div>
       </div>
     </main>
     <footer>
-      <nav>
-        <ul class="nav-bar-icons">
-          <li>
-            <a class="home-page" href="index.html"
+      <nav class="nav-bar">
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list-item item__01">
+            <a class="list-item__link home-page" href="index.html"
               ><img
+                class="home-page__icon"
                 src="https://img.icons8.com/ios/40/null/home-page.png"
                 alt="home page button"
             /></a>
           </li>
-          <li>
-            <a class="bookmarks-page" href="bookmarks.html"
+          <li class="nav-bar__list-item item__02">
+            <a class="list-item__link bookmarks-page" href="bookmarks.html"
               ><img
+                class="bookmarks-page__icon"
                 src="https://img.icons8.com/windows/50/null/filled-bookmark-ribbon.png"
                 alt="bookmark page button"
             /></a>
           </li>
-          <li>
-            <a class="profile-page active" href="profile.html"
+          <li class="nav-bar__list-item item__03">
+            <a class="list-item__link profile-page active" href="profile.html"
               ><img
+                class="profile-page__icon"
                 src="https://img.icons8.com/ios/50/null/cat-profile.png"
                 alt="profile page button"
             /></a>

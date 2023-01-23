@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="main page"
+      content="bookmark page. All the question cards that were bookmarked by the user will be displayed here. Navigation menu at the bottom with home, bookmark page and profile page options."
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300&display=swap"
       rel="stylesheet"
@@ -13,55 +16,70 @@
   </head>
   <body>
     <div class="header">
-      <h1 class="title">Quiz App</h1>
+      <h1 class="header__title">Quiz App</h1>
     </div>
     <main>
       <section class="cards">
-        <div class="card">
-          <h2 class="question">What properly flips the axes in flexbox?</h2>
-          <button type="button" class="btn-show-answer">Show Asnwer</button>
-          <div class="tags">
-            <a class="hashtag" href="#">#flexbox</a>
-            <a class="hashtag" href="#">#css</a>
-            <a class="hashtag" href="#">#quiz</a>
+        <div class="cards__card card__02">
+          <h2 class="card__question">
+            What properly flips the axes in flexbox?
+          </h2>
+          <button type="button" class="card__btn btn--show-answer">
+            Show Asnwer
+          </button>
+          <div class="card__hashtags">
+            <a class="card__hashtags hashtag" href="#">#flexbox</a>
+            <a class="card__hashtags hashtag" href="#">#css</a>
+            <a class="card__hashtags hashtag" href="#">#quiz</a>
           </div>
-          <div class="bookmark">
-            <button class="btn-bookmark">
+          <div class="card__bookmark">
+            <button class="card__bookmark btn__bookmark">
               <img
+                class="btn__bookmark image--clicked"
                 src="https://img.icons8.com/windows/32/null/filled-bookmark-ribbon.png"
                 alt="bookmark"
               />
             </button>
           </div>
         </div>
-        <div class="card">
-          <h2 class="question">What properly flips the axes in flexbox?</h2>
-          <button type="button" class="btn-show-answer">Show Asnwer</button>
-          <div class="tags">
-            <a class="hashtag" href="#">#flexbox</a>
-            <a class="hashtag" href="#">#css</a>
-            <a class="hashtag" href="#">#quiz</a>
+        <div class="cards__card card__03">
+          <h2 class="card__question">
+            What properly flips the axes in flexbox?
+          </h2>
+          <button type="button" class="card__btn btn--show-answer">
+            Show Asnwer
+          </button>
+          <div class="card__hashtags">
+            <a class="card__hashtags hashtag" href="#">#flexbox</a>
+            <a class="card__hashtags hashtag" href="#">#css</a>
+            <a class="card__hashtags hashtag" href="#">#quiz</a>
           </div>
-          <div class="bookmark">
-            <button class="btn-bookmark">
+          <div class="card__bookmark">
+            <button class="card__bookmark btn__bookmark">
               <img
+                class="btn__bookmark image--clicked"
                 src="https://img.icons8.com/windows/32/null/filled-bookmark-ribbon.png"
                 alt="bookmark"
               />
             </button>
           </div>
         </div>
-        <div class="card">
-          <h2 class="question">What properly flips the axes in flexbox?</h2>
-          <button type="button" class="btn-show-answer">Show Asnwer</button>
-          <div class="tags">
-            <a class="hashtag" href="#">#flexbox</a>
-            <a class="hashtag" href="#">#css</a>
-            <a class="hashtag" href="#">#quiz</a>
+        <div class="cards__card card__05">
+          <h2 class="card__question">
+            What properly flips the axes in flexbox?
+          </h2>
+          <button type="button" class="card__btn btn--show-answer">
+            Show Asnwer
+          </button>
+          <div class="card__hashtags">
+            <a class="card__hashtags hashtag" href="#">#flexbox</a>
+            <a class="card__hashtags hashtag" href="#">#css</a>
+            <a class="card__hashtags hashtag" href="#">#quiz</a>
           </div>
-          <div class="bookmark">
-            <button class="btn-bookmark">
+          <div class="card__bookmark">
+            <button class="card__bookmark btn__bookmark">
               <img
+                class="btn__bookmark image--clicked"
                 src="https://img.icons8.com/windows/32/null/filled-bookmark-ribbon.png"
                 alt="bookmark"
               />
@@ -71,25 +89,30 @@
       </section>
     </main>
     <footer>
-      <nav>
-        <ul class="nav-bar-icons">
-          <li>
-            <a class="home-page" href="index.html"
+      <nav class="nav-bar">
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list-item item__01">
+            <a class="list-item__link home-page" href="index.html"
               ><img
+                class="home-page__icon"
                 src="https://img.icons8.com/ios/40/null/home-page.png"
                 alt="home page button"
             /></a>
           </li>
-          <li>
-            <a class="bookmarks-page active" href="bookmarks.html"
+          <li class="nav-bar__list-item item__02">
+            <a
+              class="list-item__link bookmarks-page active"
+              href="bookmarks.html"
               ><img
+                class="bookmarks-page__icon"
                 src="https://img.icons8.com/windows/50/null/filled-bookmark-ribbon.png"
                 alt="bookmark page button"
             /></a>
           </li>
-          <li>
-            <a class="profile-page" href="profile.html"
+          <li class="nav-bar__list-item item__03">
+            <a class="list-item__link profile-page" href="profile.html"
               ><img
+                class="profile-page__icon"
                 src="https://img.icons8.com/ios/50/null/cat-profile.png"
                 alt="profile page button"
             /></a>

@@ -1,47 +1,55 @@
-.profile-info {
+.profile {
+  display: grid;
   position: relative;
   display: flex;
-  flex-flow: nowrap;
+  flex-flow: column wrap;
 }
-
-.profile-name {
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  justify-content: baseline;
-}
-.profile-image {
-  padding: 10px;
+.profile__image {
+  display: grid;
   margin-bottom: 10px;
-  justify-content: center;
-  text-align: center;
-  align-content: center;
+  justify-content: flex-start;
   display: flex;
-  flex-flow: row wrap;
+}
+.profile__info {
+  display: grid;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+}
+.profile__name {
+  display: grid;
+  display: flex;
+  margin-bottom: 10px;
+  /* flex-direction: row; */
+  position: relative;
+  /* align-items: center; */
+
+  justify-content: flex-start;
 }
 
-.profile-description {
+.profile__description {
+  display: grid;
+  grid-column: 3 / 4;
   font-family: inherit;
   border-style: double;
   border-width: 5px;
-  /* box-shadow: 5px 5px #8181db; */
   border-color: #8181db;
   background-color: #afd0e9;
   color: #8181db;
   border-radius: 15px;
-  text-align: center;
+  text-align: right;
   margin: 10px 0px 10px 0px;
   padding: 10px;
 }
 
-.counter {
+.counter__btns {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
   justify-content: center;
 }
 
-.btn {
+.counter__btn {
   font-family: inherit;
   border-style: double;
   border-width: 5px;
@@ -56,25 +64,27 @@
   margin: 10px 10px 20px 10px;
   border-radius: 10px;
 }
-.settings-title {
+.settings__title {
   position: relative;
   display: flex;
   text-align: center;
+  justify-content: flex-end;
   margin: 10px;
 }
 
 .settings {
+  position: relative;
   justify-content: flex-end;
+  flex-direction: column;
   display: flex;
-  /* justify-content: flex-end; */
 }
 
-.dark-mode-setting {
+.setting__dark-mode {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.btn-dark-mode {
+.dark-mode__btn {
   text-align: center;
   display: flex;
   background-color: transparent;
