@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="form.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Add New Card</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="header__title">Quiz App</h1>
+    </div>
+    <fieldset>
+      <form class="form" data-js="question_form">
+        <div class="question-div">
+          <label for="question">Your Question:</label>
+          <textarea data-js="question-text" name="question" id="question" cols="30" rows="5" maxlength="150"></textarea>
+          <small class="form__character-count"
+        >(<span data-js="amountLeftQuestion"></span> characters left</small
+      >
+        </div>
+        <div class="answer-div">
+          <label for="answer">Your answer:</label>
+          <textarea data-js="answer-text" name="answer" id="answer" cols="30" rows="5" maxlength="150"></textarea><small class="form__character-count"
+          ><span data-js="amountLeft"></span> characters left</small
+        >
+        </div>
+        <div class="tag-div">
+          <label for="tag">Tag:</label>
+          <input data-js="tag" type="text" id="tag" name="tag" value="" />
+        </div>
+        <button type="submit" data-js="submit-button">Submit</button>
+      </form>
+      <div class="question-cards" data-js="question-cards"></div>
+    </fieldset>
+    <div data-js="new-cards" class="new-cards"></div>
+    <footer>
+      <nav class="nav-bar">
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list-item item__01">
+            <a class="list-item__link home-page" href="index.html"
+              ><img
+                class="home-page__icon"
+                src="https://img.icons8.com/ios/40/null/home-page.png"
+                alt="home page button"
+            /></a>
+          </li>
+          <li class="nav-bar__list-item item__02">
+            <a
+              class="list-item__link bookmarks-page active"
+              href="bookmarks.html"
+              ><img
+                class="bookmarks-page__icon"
+                src="https://img.icons8.com/windows/50/null/filled-bookmark-ribbon.png"
+                alt="bookmark page button"
+            /></a>
+          </li>
+          <li class="nav-bar__list-item item__03">
+                <a class="list-item__link question-page" href="form.html"
+                  ><img class="question-page__icon"
+                    src="https://img.icons8.com/ios-filled/50/null/add--v1.png" alt="question page button"
+                /></a></li
+            ></a>
+          </li>
+          <li class="nav-bar__list-item item__04">
+            <a class="list-item__link profile-page" href="profile.html"
+              ><img
+                class="profile-page__icon"
+                src="https://img.icons8.com/ios/50/null/cat-profile.png"
+                alt="profile page button"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

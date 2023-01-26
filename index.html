@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="main.js" defer></script>
     <title>Quiz-App</title>
   </head>
   <body>
@@ -24,9 +25,17 @@
           <h2 class="card__question">
             What properly flips the axes in flexbox?
           </h2>
-          <button type="button" class="card__btn btn--show-answer">
+          <button
+            type="button"
+            class="card__btn btn--show-answer"
+            data-js="btn-show-answer"
+          >
             Show Asnwer
           </button>
+          <div class="answer" data-js="answer" type="'hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </div>
+          <!--end div_text_container-->
           <div class="card__hashtags">
             <a class="card__hashtags hashtag" href="#">#flexbox</a>
             <a class="card__hashtags hashtag" href="#">#css</a>
@@ -35,9 +44,9 @@
           <div class="card__bookmark">
             <button class="card__bookmark btn__bookmark">
               <img
-                class="btn__bookmark image--not-clicked"
                 src="https://img.icons8.com/material/30/null/bookmark-outline.png"
                 alt="bookmark"
+                data-js="card__icon"
               />
             </button>
           </div>
@@ -57,7 +66,7 @@
           <div class="card__bookmark">
             <button class="card__bookmark btn__bookmark">
               <img
-                class="btn__bookmark image--clicked"
+                class="[data-js=&quot;card__icon--active&quot;]"
                 src="https://img.icons8.com/windows/32/null/filled-bookmark-ribbon.png"
                 alt="bookmark"
               />
@@ -136,7 +145,7 @@
       <nav class="nav-bar">
         <ul class="nav-bar__list">
           <li class="nav-bar__list-item item__01">
-            <a class="list-item__link home-page active" href="index.html"
+            <a class="list-item__link home-page" href="index.html"
               ><img
                 class="home-page__icon"
                 src="https://img.icons8.com/ios/40/null/home-page.png"
@@ -144,7 +153,9 @@
             /></a>
           </li>
           <li class="nav-bar__list-item item__02">
-            <a class="list-item__link bookmarks-page" href="bookmarks.html"
+            <a
+              class="list-item__link bookmarks-page active"
+              href="bookmarks.html"
               ><img
                 class="bookmarks-page__icon"
                 src="https://img.icons8.com/windows/50/null/filled-bookmark-ribbon.png"
@@ -152,6 +163,13 @@
             /></a>
           </li>
           <li class="nav-bar__list-item item__03">
+                <a class="list-item__link question-page" href="form.html"
+                  ><img class="question-page__icon"
+                    src="https://img.icons8.com/ios-filled/50/null/add--v1.png" alt="question page button"
+                /></a></li
+            ></a>
+          </li>
+          <li class="nav-bar__list-item item__04">
             <a class="list-item__link profile-page" href="profile.html"
               ><img
                 class="profile-page__icon"
