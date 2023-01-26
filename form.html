@@ -15,23 +15,24 @@
     <fieldset>
       <form class="form" data-js="question_form">
         <div class="question-div">
-          <label for="question">Your Question:</label>
-          <textarea data-js="question-text" name="question" id="question" cols="30" rows="5" maxlength="150"></textarea>
+          <label class="question
+          " for="question">Your Question:</label>
+          <textarea class="text-area" data-js="question-text" name="question" id="question" cols="30" rows="5" maxlength="150"></textarea>
           <small class="form__character-count"
-        >(<span data-js="amountLeftQuestion"></span> characters left</small
+        ><span data-js="amountLeftQuestion"></span> characters left</small
       >
         </div>
         <div class="answer-div">
           <label for="answer">Your answer:</label>
-          <textarea data-js="answer-text" name="answer" id="answer" cols="30" rows="5" maxlength="150"></textarea><small class="form__character-count"
+          <textarea class="text-area"  data-js="answer-text" name="answer" id="answer" cols="30" rows="5" maxlength="150"></textarea><small class="form__character-count"
           ><span data-js="amountLeft"></span> characters left</small
         >
         </div>
         <div class="tag-div">
           <label for="tag">Tag:</label>
-          <input data-js="tag" type="text" id="tag" name="tag" value="" />
+          <input class="text-area" data-js="tag" type="text" id="tag" name="tag" value="" />
         </div>
-        <button type="submit" data-js="submit-button">Submit</button>
+        <button class="submit-btn" type="submit" data-js="submit-button">Submit</button>
       </form>
       <div class="question-cards" data-js="question-cards"></div>
     </fieldset>

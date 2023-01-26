@@ -1,6 +1,7 @@
 const form = document.querySelector('[data-js="question_form"]');
 const newCard = document.querySelector('[data-js="new-cards"]');
 const submitBtn = document.querySelector('[data-js="submit-button"]');
+// submitBtn.classList.add()
 
 const question = document.querySelector('[data-js="question-text"]');
 const answer = document.querySelector('[data-js="answer-text"]');
