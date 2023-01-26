@@ -1,8 +1,24 @@
+/* .hidden>div {
+	display:none;
+}
+
+.visible>div {
+	display:block;
+} */
+
+.cards {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  /* width: 30%; */
+}
 .cards__card {
   display: flex;
   position: relative;
 
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   align-items: center;
   flex-flow: column wrap;
   text-align: center;
@@ -16,6 +32,8 @@
   padding: 20px 20px;
   background-color: #e6e6fa;
   box-shadow: 10px 10px #8181db;
+  width: 50%;
+  /* height: 40%; */
 }
 .card__bookmark {
   display: flex;

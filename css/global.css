@@ -23,14 +23,6 @@
   border-width: 5px;
 }
 
-main {
-  margin: 80px 20px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-}
-
 body {
   position: relative;
   display: flex;
@@ -39,6 +31,14 @@ body {
   font-family: monospace;
   background-color: #ffffff;
   font-size: 1rem;
+}
+
+main {
+  margin: 80px 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
 }
 
 footer {

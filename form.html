@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="form.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Add New Card</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 class="header__title">Quiz App</h1>
+    </div>
+    <div class="form-container">
+      <form class="form" data-js="create_question_form">
+        <label for="question">Your Question</label>
+        <input type="text" id="question" name="question" value="" />
+        <label for="answer">Your answer:</label>
+        <input type="text" id="answer" name="answer" value="" />
+        <label for="tag">Tag:</label>
+        <input type="text" id="tag" name="tag" value="" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <footer>
+      <nav class="nav-bar">
+        <ul class="nav-bar__list">
+          <li class="nav-bar__list-item item__01">
+            <a class="list-item__link home-page" href="index.html"
+              ><img
+                class="home-page__icon"
+                src="https://img.icons8.com/ios/40/null/home-page.png"
+                alt="home page button"
+            /></a>
+          </li>
+          <li class="nav-bar__list-item item__02">
+            <a
+              class="list-item__link bookmarks-page active"
+              href="bookmarks.html"
+              ><img
+                class="bookmarks-page__icon"
+                src="https://img.icons8.com/windows/50/null/filled-bookmark-ribbon.png"
+                alt="bookmark page button"
+            /></a>
+          </li>
+          <li class="nav-bar__list-item item__03">
+            <a class="list-item__link profile-page" href="profile.html"
+              ><img
+                class="profile-page__icon"
+                src="https://img.icons8.com/ios/50/null/cat-profile.png"
+                alt="profile page button"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

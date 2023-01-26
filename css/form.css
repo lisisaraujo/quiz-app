@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+  justify-content: center;
+}
