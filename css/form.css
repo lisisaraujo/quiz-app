@@ -2,12 +2,62 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-radius: 1em;
+  border-color: #afd0e9;
+  border-style: double;
+  border-radius: 20px;
+  border-width: 5px;
+  margin: 5px;
 }
 
-/* .form-container {
+fieldset {
+  border-color: transparent;
+}
+
+.question-div {
   display: flex;
   flex-direction: column;
-  margin-top: 20%;
-  justify-content: center;
-  align-items: center;
-} */
+  margin: 1%;
+}
+
+.answer-div {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.submit-btn {
+  margin: 1%;
+  font-family: inherit;
+  border-style: double;
+  border-width: 5px;
+  box-shadow: 2px 2px #8181db;
+  border-color: #afd0e9;
+  background-color: #8181db;
+  color: #afd0e9;
+  position: end;
+  height: 20px;
+  width: 80px;
+  align-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.tag-div {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.form__character-count {
+  color: grey;
+}
+.text-area {
+  border-radius: 1em;
+  border-color: #afd0e9;
+  border-style: double;
+  border-radius: 20px;
+  border-width: 5px;
+  margin: 5px;
+  padding: 10px;
+}
