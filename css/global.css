@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: inherit; /*makes no additional margins and paddings be addded to the border of the box*/
 }
+
 .header {
   display: flex;
   position: fixed;
@@ -27,7 +28,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 90px 0 45px 0;
+  margin: 90px 0 90px 0;
   font-family: monospace;
   background-color: #ffffff;
   font-size: 1rem;

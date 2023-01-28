@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="profile page"
-      content="profile information, counter links to self-created questions and bookmarked questions and dark-mode settings options. Bookmark on the top right side of each card to save the card to the bookmarked section. Navigation menu at the bottom with home, bookmark page and profile page options."
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="darkmode.js" defer></script>
     <title>Profile</title>
   </head>
   <body>
@@ -21,9 +19,9 @@
     <main>
       <section class="profile">
         <div class="profile__image">
-          <img
-            src="https://img.icons8.com/ios/50/null/cat-profile.png"
+          <img src="https://img.icons8.com/ios/50/null/cat-profile.png"
             alt="profile image"
+            data-js="profile__image" 
           />
         </div>
         <div class="profile__info">
@@ -59,9 +57,9 @@
         <div class="settings__title"><h2>Settings</h2></div>
         <div class="setting__dark-mode">
           <h2 class="dark-mode__title">Dark mode</h2>
-          <button class="dark-mode__btn">
-            <label class="switch">
-              <input type="checkbox" />
+          <button data-js="dark-mode__btn" class="dark-mode__btn"></button>
+            <label for="darkmode-toggle" class="switch">
+              <input type="checkbox" id="darkmode-toggle" data-js="darkmode" />
               <span class="slider round"></span>
             </label>
           </button>
@@ -81,7 +79,7 @@
           </li>
           <li class="nav-bar__list-item item__02">
             <a
-              class="list-item__link bookmarks-page active"
+              class="list-item__link bookmarks-page "
               href="bookmarks.html"
               ><img
                 class="bookmarks-page__icon"
@@ -97,7 +95,7 @@
             ></a>
           </li>
           <li class="nav-bar__list-item item__04">
-            <a class="list-item__link profile-page" href="profile.html"
+            <a class="list-item__link profile-page active" href="profile.html"
               ><img
                 class="profile-page__icon"
                 src="https://img.icons8.com/ios/50/null/cat-profile.png"

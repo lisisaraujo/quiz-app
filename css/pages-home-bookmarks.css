@@ -56,7 +56,7 @@
 .card__question {
   position: relative;
   border: 20px;
-  padding: 20px;
+  margin-top: 20px;
 }
 
 .btn--show-answer {
@@ -90,4 +90,12 @@
   text-decoration: none;
   background-color: #8181db;
   border-radius: 5px;
+}
+
+.answer {
+  border-color: black;
+}
+
+.hidden {
+  display: none;
 }

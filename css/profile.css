@@ -89,10 +89,11 @@
   display: flex;
   background-color: transparent;
   height: 45px;
-  width: 35px;
+  width: 55px;
   border-color: transparent;
   justify-content: flex-end;
   align-items: center;
+  margin: 10px;
 }
 
 /* The switch - the box around the slider */

@@ -1,7 +1,11 @@
 console.clear();
 
-// bookmarkClik
+// bookmarkClik selectors
 const bookmarkClick = document.querySelector('[data-js="card__icon"]');
+const show_answer = document.querySelector('[data-js="answer"]');
+const btnShowAnswer = document.querySelector('[data-js="btn-show-answer"]');
+
+// toggle bookmark on click
 
 bookmarkClick.addEventListener("click", () => {
   if (
@@ -16,39 +20,14 @@ bookmarkClick.addEventListener("click", () => {
   }
 });
 
-// show answer
-
-const answer = document.querySelector('[data-js="answer"]');
-const btnShowAnswer = document.querySelector('[data-js="btn-show-answer"]');
+// toggle answer
 
 btnShowAnswer.addEventListener("click", () => {
-  const toggleAnswer = () => {
-    const isHidden = answer.style.display === "none";
-    if (isHidden) {
-      answer.style.display = "block";
-    } else {
-      // Hide element
-      answer.style.display = "none";
-      btnShowAnswer.textContent = "Show answer";
-    }
-  };
+  show_answer.classList.toggle("hidden");
 
-  answer.classList.add("hidden");
-  if (btnShowAnswer) {
-    answer.classList.remove("hidden");
-    btnShowAnswer.textContent = "Hide answer";
+  if (show_answer.classList.contains("hidden")) {
+    btnShowAnswer.textContent = "Show Answer";
+  } else {
+    btnShowAnswer.textContent = "Hide Answer";
   }
-  toggleAnswer();
 });
-
-// const toggleAnswer = () => {
-//   const isHidden = answer.style.display === "none";
-//   if (isHidden) {
-//     answer.style.display = "block";
-//     btnShowAnswer.textContent = btnShowAnswer;
-//   } else {
-//     // Hide element
-//     answer.style.display = "none";
-//     btn.innerHTML = "Hide answer";
-//   }
-// };

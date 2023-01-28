@@ -1,0 +1,33 @@
+.dark-mode {
+  background-color: #040719;
+  color: #e6e6fa;
+}
+
+.dark-mode .profile__description {
+  border-color: #4a19fe;
+  background-color: #20234d;
+  color: #e6e6fa;
+}
+
+.dark-mode .counter__btn {
+  box-shadow: 5px 5px #4a19fe;
+  border-color: #4a19fe;
+  background-color: #20234d;
+  color: #e6e6fa;
+}
+
+/* The slider */
+.dark-mode .slider {
+  background-color: #ccc;
+}
+
+.dark-mode .slider:before {
+  background-color: #e6e6fa;
+}
+.dark-mode input:checked + .slider {
+  background-color: #4a19fe;
+}
+
+.dark-mode input:focus + .slider {
+  box-shadow: 0 0 1px #4a19fe;
+}

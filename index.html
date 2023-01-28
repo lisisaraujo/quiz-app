@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="main page"
-      content="quiz cards with questions a 'show answer' button on each card to reveal the answer. Bookmark on the top right side of each card to save the card to the bookmarked section. Navigation menu at the bottom with home, bookmark page and profile page options."
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300&display=swap"
       rel="stylesheet"
@@ -32,8 +29,8 @@
           >
             Show Asnwer
           </button>
-          <div class="answer" data-js="answer" type="'hidden">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          <div class="hidden answer" data-js="answer" >
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <!--end div_text_container-->
           <div class="card__hashtags">
@@ -145,7 +142,7 @@
       <nav class="nav-bar">
         <ul class="nav-bar__list">
           <li class="nav-bar__list-item item__01">
-            <a class="list-item__link home-page" href="index.html"
+            <a class="list-item__link home-page active" href="index.html"
               ><img
                 class="home-page__icon"
                 src="https://img.icons8.com/ios/40/null/home-page.png"
@@ -154,7 +151,7 @@
           </li>
           <li class="nav-bar__list-item item__02">
             <a
-              class="list-item__link bookmarks-page active"
+              class="list-item__link bookmarks-page "
               href="bookmarks.html"
               ><img
                 class="bookmarks-page__icon"

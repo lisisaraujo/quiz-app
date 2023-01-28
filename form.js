@@ -1,7 +1,6 @@
 const form = document.querySelector('[data-js="question_form"]');
 const newCard = document.querySelector('[data-js="new-cards"]');
 const submitBtn = document.querySelector('[data-js="submit-button"]');
-// submitBtn.classList.add()
 
 const question = document.querySelector('[data-js="question-text"]');
 const answer = document.querySelector('[data-js="answer-text"]');
@@ -13,8 +12,11 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
 
+  // calling the function to use the data input of the form
   createCard(data);
 });
+
+// function to create new elements, add the styling and append it to the card
 
 function createCard(cardData) {
   const card = document.createElement("div");
@@ -51,13 +53,19 @@ function createCard(cardData) {
   cardBookmarkImg.src =
     "https://img.icons8.com/material/30/null/bookmark-outline.png";
 
-  // add the text node to the newly created div
   cardBookmarkBtn.append(cardBookmarkImg);
   cardBookmarks.append(cardBookmarkBtn);
   cardTags.append(cardHashtags);
   card.append(cardQuestion, cardBtn, cardAsnwer, cardTags, cardBookmarks);
   newCard.append(card);
+
+  form.reset();
+  form.elements.question.focus();
+  amountLeft.textContent = maxLength;
+  amountLeftQuestion.textContent = maxLength;
 }
+
+// characters counter
 
 const amountLeft = document.querySelector('[data-js="amountLeft"]');
 const amountLeftQuestion = document.querySelector(
