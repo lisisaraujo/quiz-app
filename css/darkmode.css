@@ -8,7 +8,8 @@
   border-style: solid;
   border-color: #4a19fe;
   border-top-color: #040719;
-  border-width: 5px;
+  border-width: 3px;
+  box-shadow: 0 0 5px #4a19fe, 0 0 25px #4a19fe;
 }
 
 .dark-mode .header__title {
@@ -20,7 +21,8 @@
   border-style: solid;
   border-color: #4a19fe;
   border-bottom-color: #040719;
-  border-width: 5px;
+  border-width: 3px;
+  box-shadow: 0 0 5px #4a19fe, 0 0 25px #4a19fe;
 }
 
 .dark-mode .active {
@@ -54,4 +56,10 @@
 
 .dark-mode input:focus + .slider {
   box-shadow: 0 0 1px #4a19fe;
+}
+
+/* form */
+.dark-mode .form {
+  border-color: #4a19fe;
+  color: #e6e6fa;
 }

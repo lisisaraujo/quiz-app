@@ -12,6 +12,15 @@
     <div class="header">
       <h1 class="header__title">Quiz App</h1>
     </div>
+    <div class="setting__dark-mode">
+      <h3 class="dark-mode__title">Dark mode</h3>
+      <button data-js="dark-mode__btn" class="dark-mode__btn"></button>
+        <label for="darkmode-toggle" class="switch">
+          <input type="checkbox" id="darkmode-toggle" data-js="darkmode" />
+          <span class="slider round"></span>
+        </label>
+      </button>
+    </div>
     <fieldset>
       <form class="form" data-js="question_form">
         <div class="question-div">
@@ -91,11 +100,12 @@
             /></a>
           </li>
           <li class="nav-bar__list-item item__04">
-            <a class="list-item__link profile-page" href="profile.html"
+            <a class="list-item__link profile-page active" href="profile.html"
               ><img
                 class="profile-page__icon"
                 src="https://img.icons8.com/ios/50/null/cat-profile.png"
                 alt="profile page button"
+                data-js="profile-page__icon"
             /></a>
           </li>
         </ul>

@@ -5,10 +5,10 @@
   flex-flow: column wrap;
 }
 .profile__image {
-  display: grid;
-  margin-bottom: 10px;
-  justify-content: flex-start;
+  /* margin-bottom: 10px; */
+  justify-content: flex-end;
   display: flex;
+  justify-items: end;
 }
 .profile__info {
   display: grid;
@@ -17,14 +17,13 @@
   justify-content: flex-end;
 }
 .profile__name {
-  display: grid;
   display: flex;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   /* flex-direction: row; */
-  position: relative;
-  /* align-items: center; */
-
-  justify-content: flex-start;
+  /* position: relative; */
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
 }
 
 .profile__description {
@@ -72,27 +71,27 @@
 }
 
 .settings {
+  display: flex;
   position: relative;
   justify-content: flex-end;
   flex-direction: column;
-  display: flex;
 }
 
 .setting__dark-mode {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
 }
 .dark-mode__btn {
   text-align: center;
   display: flex;
   background-color: transparent;
-  height: 45px;
-  width: 55px;
+  /* height: 45px;
+  width: 55px; */
   border-color: transparent;
   justify-content: flex-end;
   align-items: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 /* The switch - the box around the slider */
@@ -118,7 +117,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #afd0e9;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -130,7 +129,7 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: #8181db;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }

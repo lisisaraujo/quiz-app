@@ -17,6 +17,15 @@
       <h1 class="header__title">Quiz App</h1>
     </div>
     <main>
+      <div class="setting__dark-mode">
+        <h3 class="dark-mode__title">Dark mode</h3>
+        <button data-js="dark-mode__btn" class="dark-mode__btn"></button>
+          <label for="darkmode-toggle" class="switch">
+            <input type="checkbox" id="darkmode-toggle" data-js="darkmode" />
+            <span class="slider round"></span>
+          </label>
+        </button>
+      </div>
       <section class="cards">
         <div class="cards__card card__02">
           <h2 class="card__question">
@@ -125,11 +134,12 @@
             ></a>
           </li>
           <li class="nav-bar__list-item item__04">
-            <a class="list-item__link profile-page" href="profile.html"
+            <a class="list-item__link profile-page active" href="profile.html"
               ><img
                 class="profile-page__icon"
                 src="https://img.icons8.com/ios/50/null/cat-profile.png"
                 alt="profile page button"
+                data-js="profile-page__icon"
             /></a>
           </li>
         </ul>
