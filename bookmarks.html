@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300&display=swap"
       rel="stylesheet"
     />
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Bookmarks</title>
   </head>
@@ -21,9 +22,12 @@
           <h2 class="card__question">
             What properly flips the axes in flexbox?
           </h2>
-          <button type="button" class="card__btn btn--show-answer">
+          <button type="button" class="card__btn btn--show-answer" data-js="btn-show-answer" data-js="btn-show-answer" >
             Show Asnwer
           </button>
+          <div class="hidden answer" data-js="answer" >
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
           <div class="card__hashtags">
             <a class="card__hashtags hashtag" href="#">#flexbox</a>
             <a class="card__hashtags hashtag" href="#">#css</a>
@@ -34,7 +38,8 @@
               <img
                 class="btn__bookmark image--clicked"
                 src="https://img.icons8.com/windows/32/null/filled-bookmark-ribbon.png"
-                alt="bookmark"
+                alt="bookmark" 
+                data-js="card__icon"
               />
             </button>
           </div>
@@ -43,9 +48,12 @@
           <h2 class="card__question">
             What properly flips the axes in flexbox?
           </h2>
-          <button type="button" class="card__btn btn--show-answer">
+          <button type="button" class="card__btn btn--show-answer" data-js="btn-show-answer">
             Show Asnwer
           </button>
+          <div class="hidden answer" data-js="answer" >
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
           <div class="card__hashtags">
             <a class="card__hashtags hashtag" href="#">#flexbox</a>
             <a class="card__hashtags hashtag" href="#">#css</a>
@@ -56,7 +64,7 @@
               <img
                 class="btn__bookmark image--clicked"
                 src="https://img.icons8.com/windows/32/null/filled-bookmark-ribbon.png"
-                alt="bookmark"
+                alt="bookmark" data-js="card__icon"
               />
             </button>
           </div>
@@ -65,9 +73,12 @@
           <h2 class="card__question">
             What properly flips the axes in flexbox?
           </h2>
-          <button type="button" class="card__btn btn--show-answer">
+          <button type="button" class="card__btn btn--show-answer" data-js="btn-show-answer">
             Show Asnwer
           </button>
+          <div class="hidden answer" data-js="answer" >
+            <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
           <div class="card__hashtags">
             <a class="card__hashtags hashtag" href="#">#flexbox</a>
             <a class="card__hashtags hashtag" href="#">#css</a>
@@ -78,7 +89,7 @@
               <img
                 class="btn__bookmark image--clicked"
                 src="https://img.icons8.com/windows/32/null/filled-bookmark-ribbon.png"
-                alt="bookmark"
+                alt="bookmark" data-js="card__icon"
               />
             </button>
           </div>

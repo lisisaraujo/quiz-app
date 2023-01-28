@@ -4,6 +4,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: inherit; /*makes no additional margins and paddings be addded to the border of the box*/
+  font-family: "Roboto Mono", monospace;
 }
 
 .header {
@@ -14,7 +15,7 @@
   background-color: #e3f0f9;
   height: 60px;
   padding: 10px;
-  width: 100%;
+  width: -webkit-fill-available;
   top: 0;
   z-index: 1;
 }
@@ -29,7 +30,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 90px 0 90px 0;
-  font-family: monospace;
+  /* font-family: monospace; */
   background-color: #ffffff;
   font-size: 1rem;
 }

@@ -3,6 +3,30 @@
   color: #e6e6fa;
 }
 
+.dark-mode .header {
+  background-color: #040719;
+  border-style: solid;
+  border-color: #4a19fe;
+  border-top-color: #040719;
+  border-width: 5px;
+}
+
+.dark-mode .header__title {
+  color: #e6e6fa;
+}
+
+.dark-mode footer {
+  background-color: #040719;
+  border-style: solid;
+  border-color: #4a19fe;
+  border-bottom-color: #040719;
+  border-width: 5px;
+}
+
+.dark-mode .active {
+  background-color: #20234d;
+}
+
 .dark-mode .profile__description {
   border-color: #4a19fe;
   background-color: #20234d;

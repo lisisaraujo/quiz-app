@@ -1,3 +1,5 @@
+console.clear();
+
 const form = document.querySelector('[data-js="question_form"]');
 const newCard = document.querySelector('[data-js="new-cards"]');
 const submitBtn = document.querySelector('[data-js="submit-button"]');
